@@ -1,0 +1,400 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0b0d10;
+  font-family: 'Inter', 'Cairo', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Offset anchor targets below the fixed navbar */
+[id] {
+  scroll-margin-top: 6.5rem;
+}
+
+/* ---------- RTL (Arabic) overrides ---------- */
+[dir='rtl'] .tracking-wide,
+[dir='rtl'] .tracking-widestx,
+[dir='rtl'] .tracking-wider {
+  letter-spacing: 0;
+}
+[dir='rtl'] .marquee-track {
+  animation-direction: reverse;
+}
+[dir='rtl'] .marquee-track.reverse {
+  animation-direction: normal;
+}
+/* Flip directional icons in RTL */
+[dir='rtl'] .rtl-flip {
+  transform: rotate(180deg);
+}
+
+::selection {
+  background: #e11d2a;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #e11d2a;
+  color: #ffffff;
+}
+
+/* ---------- Custom scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eef0f2;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #e11d2a, #7a0d1d);
+  border-radius: 10px;
+}
+
+/* ---------- Seamless marquee ---------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Text outline ---------- */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(11, 13, 16, 0.22);
+  text-stroke: 1.5px rgba(11, 13, 16, 0.22);
+}
+
+/* ---------- Soft floating ---------- */
+.animate-float {
+  animation: float-y 7s ease-in-out infinite;
+}
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* ---------- Slow glowing pulse ---------- */
+.animate-glow {
+  animation: glow-pulse 4.5s ease-in-out infinite;
+}
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+/* Grid texture helper (light theme) */
+.grid-lines {
+  background-image: linear-gradient(
+      to right,
+      rgba(11, 13, 16, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(11, 13, 16, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* ---------- Preloader spinner rings ---------- */
+.preloader-ring {
+  position: absolute;
+  inset: -12px;
+  border-radius: 9999px;
+  border: 2px solid rgba(225, 29, 42, 0.15);
+  border-top-color: #e11d2a;
+  animation: preloader-spin 0.9s linear infinite;
+}
+.preloader-ring--reverse {
+  inset: -22px;
+  border: 2px dashed rgba(11, 13, 16, 0.12);
+  border-top-color: rgba(11, 13, 16, 0.55);
+  animation: preloader-spin 1.6s linear infinite reverse;
+}
+/* ---------- Scroll progress sidebar ---------- */
+.scroll-sidebar {
+  position: fixed;
+  top: 50%;
+  inset-inline-start: clamp(0.75rem, 2vw, 1.75rem);
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+  transform: translateY(-50%);
+  font-family: 'Space Grotesk', 'Cairo', sans-serif;
+}
+.scroll-sidebar__caption {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: rgba(11, 13, 16, 0.55);
+}
+[dir='rtl'] .scroll-sidebar__caption {
+  writing-mode: vertical-lr;
+  transform: none;
+}
+.scroll-sidebar__percent {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e11d2a;
+  letter-spacing: 0.08em;
+}
+.scroll-road {
+  position: relative;
+  width: 2px;
+  height: min(42vh, 20rem);
+  background: linear-gradient(180deg, rgba(11, 13, 16, 0.12), rgba(11, 13, 16, 0.04));
+  border-radius: 9999px;
+}
+.scroll-road__meter {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.scroll-road__fill {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #e11d2a, #7a0d1d);
+  transform-origin: 50% 0%;
+}
+.scroll-road__stops {
+  position: absolute;
+  inset: 0;
+}
+.scroll-road__stop {
+  position: absolute;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid rgba(11, 13, 16, 0.18);
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+.scroll-road__stop:hover,
+.scroll-road__stop:focus-visible {
+  transform: translate(-50%, -50%) scale(1.25);
+  border-color: #e11d2a;
+  outline: none;
+}
+.scroll-road__stop[aria-current='location'] {
+  background: #e11d2a;
+  border-color: #7a0d1d;
+}
+.scroll-road__tooltip {
+  position: absolute;
+  inset-inline-start: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%) translateX(4px);
+  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0b0d10;
+  background: #ffffff;
+  border: 1px solid rgba(11, 13, 16, 0.12);
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  box-shadow: 0 8px 24px -12px rgba(11, 13, 16, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.scroll-road__stop:hover .scroll-road__tooltip,
+.scroll-road__stop:focus-visible .scroll-road__tooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+.scroll-road__car {
+  position: absolute;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.75rem;
+  height: auto;
+  filter: drop-shadow(0 6px 10px rgba(122, 13, 29, 0.35));
+  transition: top 0.12s linear;
+}
+
+/* ---------- Hero honda background ---------- */
+.hero-honda-bg {
+  position: absolute;
+  inset: -15% -5%;
+  background-image: url('/assets/images/backgrounds/honda.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  will-change: transform;
+  z-index: 0;
+}
+.hero-honda-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 245, 244, 0.85) 0%, rgba(255, 255, 255, 0.75) 55%);
+  pointer-events: none;
+}
+
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+}
+.parallax-section__honda {
+  position: absolute;
+  inset: -30% -10%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  will-change: transform;
+  z-index: 0;
+}
+.parallax-section__bg {
+  position: absolute;
+  inset: -20% -10%;
+  background-repeat: repeat;
+  background-size: 400px;
+  pointer-events: none;
+  will-change: transform;
+  z-index: 0;
+}
+.parallax-section__texture {
+  position: absolute;
+  inset: -10% -4% auto -4%;
+  height: 60%;
+  background-repeat: repeat;
+  background-size: 320px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.parallax-section__orb {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(225, 29, 42, 0.12) 0%, transparent 70%);
+  filter: blur(40px);
+  inset-inline-end: -6rem;
+  top: 12%;
+  pointer-events: none;
+}
+.parallax-section__car {
+  position: absolute;
+  bottom: -2rem;
+  pointer-events: none;
+  will-change: transform;
+}
+.parallax-section__car--start {
+  inset-inline-start: -4rem;
+  transform: rotate(8deg);
+}
+.parallax-section__car--end {
+  inset-inline-end: -4rem;
+  transform: rotate(-8deg) scaleX(-1);
+}
+.parallax-section--has-car {
+  isolation: isolate;
+}
+.parallax-section--has-pattern::after,
+.parallax-section--has-honda::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(255, 255, 255, 0.7) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+.parallax-section--has-pattern > .relative,
+.parallax-section--has-honda > .relative {
+  z-index: 2;
+}
+
+/* ---------- Tilted section edges with parallax ---------- */
+.section-tilted {
+  clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+}
+.section-tilted--reverse {
+  clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 94%);
+}
+.section-tilted::before,
+.section-tilted--reverse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(225, 29, 42, 0.03) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(225, 29, 42, 0.03) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+.section-tilted > .relative,
+.section-tilted--reverse > .relative {
+  transform: translateY(0);
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .scroll-sidebar {
+    display: none;
+  }
+  .section-tilted {
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  }
+  .section-tilted--reverse {
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+  }
+  .parallax-section__car {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-road__car,
+  .parallax-section__texture,
+  .parallax-section__orb,
+  .parallax-section__car {
+    transition: none !important;
+    animation: none !important;
+  }
+}

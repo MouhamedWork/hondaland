@@ -1,0 +1,263 @@
+{
+  "brand": { "prefix": "HONDA", "suffix": "PRINCE" },
+  "brandFull": "Honda Prince",
+  "tagline": "Genuine auto spare parts",
+  "lang": { "switch": "العربية", "aria": "Switch language" },
+  "progress": {
+    "label": "Page scroll progress",
+    "journey": "THE JOURNEY",
+    "sections": "Jump to a section"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "whyUs": "Why Us",
+    "brands": "Brands",
+    "blog": "Blog",
+    "location": "Location",
+    "contact": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Four dedicated divisions, one promise: the right part, at the right time.",
+    "explore": "Explore service",
+    "readMore": "Read more",
+    "processTitle": "How the service works",
+    "related": "Related services",
+    "s1": {
+      "name": "Original Spare Parts",
+      "short": "100% genuine OEM parts supplied to dealerships, workshops and individuals.",
+      "long1": "We partner with authorized distributors to supply original OEM spare parts for passenger cars and light commercial vehicles.",
+      "long2": "Every part passes a verification stage against the manufacturer catalog before it is packed, so you always receive the exact reference you ordered.",
+      "feat1": "Full OEM traceability",
+      "feat2": "Dealership-level pricing",
+      "feat3": "Warranty on every order",
+      "steps": ["Send the OEM number or part name", "Catalog verification & fitment check", "Fixed quote and order confirmation", "Pickup from the store or same-day delivery"]
+    },
+    "s2": {
+      "name": "Used & Recycled Parts",
+      "short": "Carefully inspected used parts with a professional grading system.",
+      "long1": "Our salvage team inspects every used part and grades it (A / B / C) so you know exactly what you are buying.",
+      "long2": "High-turnover items such as engines, gearboxes and body panels are pressure-tested and photo-documented before shipping.",
+      "feat1": "Graded A / B / C quality",
+      "feat2": "Photo-documented condition",
+      "feat3": "Up to 60% below new price",
+      "steps": ["Sourcing the part from our stock network", "Full inspection and A / B / C grading", "Photo documentation and final quote", "Warranty activation and delivery"]
+    },
+    "s3": {
+      "name": "Order-by-Order Import",
+      "short": "We source rare and discontinued parts from global markets within days.",
+      "long1": "Cannot find a part locally? Send us the OEM number and we source it directly from trusted suppliers in Asia, Europe and the Gulf.",
+      "long2": "You receive a fixed quote with customs and shipping included before we place the order — no surprises.",
+      "feat1": "Rare & discontinued parts",
+      "feat2": "Fixed final quote",
+      "feat3": "Fast global sourcing",
+      "steps": ["Send the OEM number via WhatsApp or the form", "Sourcing from trusted global suppliers", "Fixed quote including customs and shipping", "Order placed, tracked and delivered"]
+    },
+    "s4": {
+      "name": "Delivery & Shipping",
+      "short": "Same-day delivery inside the city and nationwide shipping with live tracking.",
+      "long1": "Orders confirmed before 2:00 PM are delivered the same day across the city, with nationwide shipping following a daily schedule.",
+      "long2": "Every shipment is tracked and insured, and our hotline stays open for delivery follow-up from 9 AM to 9 PM.",
+      "feat1": "Same-day city delivery",
+      "feat2": "Nationwide covered",
+      "feat3": "Tracked & insured",
+      "steps": ["Order confirmation and address check", "Secure protective packing", "Dispatch with live tracking number", "Delivery confirmation and follow-up"]
+    }
+  },
+  "hero": {
+    "badge": "Trusted since 2005",
+    "title1": "EVERY PART.",
+    "title2": "EVERY PROMISE.",
+    "desc": "Honda Prince is a specialized trading company in automotive spare parts — serving workshops, dealerships and private customers with genuine parts, fair prices and fast delivery.",
+    "cta1": "Browse our services",
+    "cta2": "Contact the store",
+    "delivery": "Same-day delivery available"
+  },
+  "stats": {
+    "eyebrow": "The company in numbers",
+    "l1": "Years of experience",
+    "l2": "Workshops supplied",
+    "l3": "Parts delivered",
+    "l4": "Partner brands"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title1": "A name built on",
+    "title2": "trust and accuracy",
+    "p1": "Honda Prince started as a small spare parts shop with a simple belief: no customer should wait weeks for a missing part. Today we are a full trading company distributing genuine parts across the country.",
+    "p2": "We combine deep technical knowledge with a strict supply chain, which is why workshops and dealerships trust us with their daily operations.",
+    "p3": "Our team verifies every reference, grades every used part, and stands behind every delivery.",
+    "points": ["Genuine OEM supply", "Technical consultation", "After-sales support", "Fair transparent pricing"],
+    "cta": "Get to know our story"
+  },
+  "vision": {
+    "eyebrow": "Our vision",
+    "title1": "Mobility that never",
+    "title2": "stops",
+    "p1": "We look at the country's roads and see more than cars — we see businesses that depend on them. Trucks that feed markets, taxis that move cities, families that travel safely.",
+    "p2": "Our vision is simple: build the most reliable spare parts supply network in the region, so that no vehicle stays parked longer than it should.",
+    "p3": "Every part we stock, every supplier we work with, and every person we hire is a step toward that future.",
+    "values": [
+      { "title": "Credibility", "desc": "We sell only what we have inspected and verified ourselves." },
+      { "title": "Speed", "desc": "Short procurement paths because we know time is money." },
+      { "title": "Partnership", "desc": "We grow when our customers grow." }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why us",
+    "title1": "Four reasons workshops",
+    "title2": "choose us",
+    "r1": { "title": "Genuine guarantee", "desc": "Every part is authenticated against OEM catalogs; counterfeit is simply not an option." },
+    "r2": { "title": "Speed that matters", "desc": "Same-day delivery in the city and a dedicated hotline for urgent workshop requests." },
+    "r3": { "title": "Fair transparent pricing", "desc": "Dealership-level prices with fixed quotes on every order — including imports." },
+    "r4": { "title": "Technical support", "desc": "A team that actually knows parts: fitment checks and compatibility advice before you buy." }
+  },
+  "partners": {
+    "eyebrow": "Success partners",
+    "title1": "Partners of",
+    "title2": "our success",
+    "desc": "We work hand in hand with leading global manufacturers and suppliers to keep every shelf stocked with genuine parts.",
+    "items": [
+      { "name": "BOSCH", "field": "Electrical & ignition" },
+      { "name": "DENSO", "field": "Sensors & fuel systems" },
+      { "name": "NGK", "field": "Spark plugs" },
+      { "name": "KYB", "field": "Suspension & shocks" },
+      { "name": "CASTROL", "field": "Lubricants & oils" },
+      { "name": "VALEO", "field": "Clutch & cooling" },
+      { "name": "AISIN", "field": "Transmission parts" },
+      { "name": "SAKURA", "field": "Filters" }
+    ]
+  },
+  "awards": {
+    "eyebrow": "Awards & certificates",
+    "title1": "Certificates that",
+    "title2": "speak for us",
+    "desc": "Recognitions and official certifications collected over more than two decades of honest work.",
+    "serial": "Certificate No.",
+    "items": [
+      { "title": "Best Spare Parts Distributor", "issuer": "Cairo Chamber of Commerce", "year": "2023" },
+      { "title": "ISO 9001 Quality Certificate", "issuer": "International Organization for Standardization", "year": "2021" },
+      { "title": "Parts Company of the Year", "issuer": "Egypt Automotive Awards", "year": "2024" },
+      { "title": "Authorized Dealership Certificate", "issuer": "Honda Regional Office", "year": "2020" },
+      { "title": "Customer Service Excellence", "issuer": "National Trade Federation", "year": "2022" },
+      { "title": "Import & Logistics Excellence", "issuer": "Egyptian Customs Authority", "year": "2023" }
+    ]
+  },
+  "brands": {
+    "eyebrow": "Brands",
+    "title1": "Parts for every",
+    "title2": "major brand",
+    "desc": "We cover all major vehicle brands and their full mechanical and electrical lines — from filters to gearboxes.",
+    "cta": "Can't find your brand? We import on request.",
+    "note": "Import service covers brands not listed here"
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title1": "From the",
+    "title2": "workshop",
+    "readMore": "Read article",
+    "p1": {
+      "title": "How to tell a genuine brake pad from a counterfeit",
+      "date": "March 2026",
+      "excerpt": "A short guide that could save your life — signs, markings and simple tests."
+    },
+    "p2": {
+      "title": "OEM vs aftermarket parts: which one for your car?",
+      "date": "February 2026",
+      "excerpt": "We break down the cost, quality and longevity differences in plain language."
+    },
+    "p3": {
+      "title": "The complete checklist before buying a used engine",
+      "date": "January 2026",
+      "excerpt": "Compression, oil condition, noise patterns — everything our graders check."
+    }
+  },
+  "location": {
+    "eyebrow": "Location",
+    "title1": "Find us",
+    "title2": "on the map",
+    "p1": "Our main branch and warehouse are located on the commercial road, with convenient parking and a customer service desk.",
+    "hours": "Working hours",
+    "hoursValue": "Saturday – Thursday, 9:00 AM – 9:00 PM",
+    "weekend": "Friday: closed",
+    "addressLine": "Main Commercial Road, Industrial Zone, near the ring road",
+    "phone": "1-800-HONDA",
+    "email": "info@hondaparts.example.com",
+    "directions": "Get directions"
+  },
+  "cta": {
+    "eyebrow": "Get in touch",
+    "title1": "Need a part",
+    "title2": "today?",
+    "desc": "Send us the part name or OEM number and our team will reply within one working hour.",
+    "call": "Or call us at",
+    "button": "Request a part",
+    "phone": "1-800-HONDA"
+  },
+  "footer": {
+    "desc": "A specialized trading company in automotive spare parts — working since 2005 to keep vehicles on the road.",
+    "store": "Flagship Store",
+    "col1": "Company",
+    "l1_1": "About Us",
+    "l1_2": "Our Vision",
+    "l1_3": "Why Us",
+    "l1_4": "Location",
+    "col2": "Services",
+    "l2_1": "Original Parts",
+    "l2_2": "Used Parts",
+    "l2_3": "Import Service",
+    "l2_4": "Delivery & Shipping",
+    "col3": "More",
+    "l3_1": "Brands",
+    "l3_2": "Blog",
+    "l3_3": "Contact",
+    "l3_4": "Working Hours",
+    "rights": "All rights reserved.",
+    "credit": "Honda Prince — Genuine auto spare parts"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title1": "Talk to",
+    "title2": "our team",
+    "desc": "Send the part name or the OEM number and our team will get back to you within one working hour.",
+    "name": "Full name",
+    "phone": "Phone number",
+    "part": "Part name / OEM number",
+    "message": "Additional details (optional)",
+    "submit": "Send request",
+    "success": "Request received! Our team will contact you shortly.",
+    "again": "Send another request",
+    "info": "Direct contact"
+  },
+  "notFound": {
+    "code": "404",
+    "title1": "Page not",
+    "title2": "found",
+    "desc": "The page you are looking for does not exist or has been moved.",
+    "back": "Back to home"
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title1": "What our",
+    "title2": "clients say",
+    "items": [
+      { "name": "Ahmed Samir", "role": "Workshop owner", "text": "Three years of weekly orders and not a single mistake. Their OEM verification saved us many headaches with fake parts." },
+      { "name": "Mohamed Reda", "role": "Fleet manager", "text": "Fixed quotes with customs included for imports — we finally stopped losing time on hidden costs. Delivery is always on schedule." },
+      { "name": "Karim Hassan", "role": "Private customer", "text": "They found a discontinued gearbox part for my car in under a week. The team actually knows what they are selling." }
+    ]
+  },
+  "preloader": { "loading": "Loading" },
+  "pageTitle": {
+    "home": "Honda Prince — Automotive Spare Parts",
+    "about": "About Us — Honda Prince",
+    "vision": "Our Vision — Honda Prince",
+    "services": "Services — Honda Prince",
+    "whyUs": "Why Us — Honda Prince",
+    "brands": "Brands — Honda Prince",
+    "blog": "Blog — Honda Prince",
+    "location": "Location — Honda Prince",
+    "contact": "Contact — Honda Prince"
+  }
+}
